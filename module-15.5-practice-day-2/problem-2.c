@@ -41,7 +41,7 @@ int main()
 {
 
     char ch[101];
-    scanf("%s", ch);
+    scanf("%s", &ch);
 
     int ans = count(ch);
     printf("%d", ans);
