@@ -18,23 +18,35 @@
 //     return 0;
 // }
 
+// #include <stdio.h>
+
+// int main()
+// {
+//     int x = 10;
+
+//     int *p;
+//     p = &x;
+
+//     printf("%d\n", x);  // value of x
+//     printf("%d\n", *p); // value of x
+//     printf("%p\n", &x); // address of x
+//     printf("%p\n", p);  // address of x
+//     printf("%p\n", &p); // address of p pointer
+
+//     *p = 20;           // change value of x using pointer
+//     printf("%d\n", x); // value of x
+
+//     return 0;
+// }
 #include <stdio.h>
 
 int main()
 {
     int x = 10;
+    printf("%p\n", &x);
 
-    int *p;
-    p = &x;
-
-    printf("%d\n", x);  // value of x
-    printf("%d\n", *p); // value of x
-    printf("%p\n", &x); // address of x
-    printf("%p\n", p);  // address of x
-    printf("%p\n", &p); // address of p pointer
-
-    *p = 20;           // change value of x using pointer
-    printf("%d\n", x); // value of x
+    int *p = &x;
+    printf("%p\n", &p);
 
     return 0;
 }
