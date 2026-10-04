@@ -20,6 +20,7 @@
 
 void swap(int *a, int *b)
 {
+
     int temp = *a;
     *a = *b;
     *b = temp;
@@ -27,12 +28,10 @@ void swap(int *a, int *b)
 
 int main()
 {
-
-    int a = 1, b = 2;
+    int a = 10, b = 20;
 
     swap(&a, &b);
 
     printf("%d %d", a, b);
-
     return 0;
 }
