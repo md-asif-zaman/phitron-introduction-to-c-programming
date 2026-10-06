@@ -7,21 +7,23 @@ void mello()
 
 void gello()
 {
-    printf("Gello\n");
+
     mello();
+    printf("Gello\n");
 }
 
 void hello()
 {
-    printf("Hello\n");
+
     gello();
+    printf("Hello\n");
 }
 
 int main()
 {
 
-    printf("HI\n");
     hello();
+    printf("HI\n");
 
     return 0;
 }
