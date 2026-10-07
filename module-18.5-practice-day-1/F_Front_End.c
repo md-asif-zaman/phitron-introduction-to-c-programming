@@ -1,3 +1,36 @@
+// #include <stdio.h>
+
+// int main()
+// {
+//     int n;
+//     scanf("%d", &n);
+
+//     int a[n];
+//     for (int i = 0; i < n; i++)
+//     {
+//         scanf("%d", &a[i]);
+//     }
+
+//     int i = 0;
+//     int j = n - 1;
+
+//     while (i <= j)
+//     {
+//         if (i == j)
+//         {
+//             printf("%d ", a[i]);
+//         }
+//         else
+//         {
+//             printf("%d %d ", a[i], a[j]);
+//         }
+//         i++;
+//         j--;
+//     }
+
+//     return 0;
+// }
+
 #include <stdio.h>
 
 int main()
@@ -14,18 +47,15 @@ int main()
     int i = 0;
     int j = n - 1;
 
-    while (i <= j)
+    while (i < j)
     {
-        if (i == j)
-        {
-            printf("%d ", a[i]);
-        }
-        else
-        {
-            printf("%d %d ", a[i], a[j]);
-        }
+        printf("%d %d ", a[i], a[j]);
         i++;
         j--;
+    }
+    if (n % 2 != 0)
+    {
+        printf("%d", a[n / 2]);
     }
 
     return 0;
