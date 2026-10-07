@@ -1,7 +1,7 @@
-// https://codeforces.com/group/MWSDmqGsZm/contest/219774/problem/S
+https : // codeforces.com/group/MWSDmqGsZm/contest/219774/problem/S
 #include <stdio.h>
 
-int main()
+        int main()
 {
 
     int r, c;
